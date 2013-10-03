@@ -1,0 +1,149 @@
+/*
+ * Definições gerais
+ */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+	color: #555555;
+}
+
+body {
+	background-color: #e1e1e1;
+	font-size: 0.95em;
+}
+
+.mainPage{
+	padding: 1.5%;
+}
+
+
+
+/*
+ * Highlights
+ */
+.highlights{
+    background-color: #8D96A8;
+    height: 570px;
+    line-height: 25;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+/*
+ * Cabeçalho
+ */
+.mainPage > header {
+	background-color: #D17b7b;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	height: 70px;
+	line-height: 4.5;
+	padding: 0 0 0 1.5%;
+	position: fixed;
+	width: 95.5%;
+	z-index:10;
+	top: 20px;
+}
+.mainPage > header > h1 {
+	display: inline-block;
+    line-height: 1;
+    margin-top: 8px;
+}
+
+
+
+
+
+/*
+ * Cada categoria
+ * 
+ */
+.mainContent .movieCategory {
+    background-color: #9FD192;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mainContent .movieCategory > header > h1{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+.mainContent .movieList{
+	list-style-type:none;
+}
+.mainContent .movieList > li{
+	display: inline-block;
+    margin-right: 10px;
+}
+.mainContent .movieList > li:last-child{
+	margin-right: 0;
+}
+.mainContent .movieList > li> article {
+    background-color: #DDDDDD;
+    height: 236px;
+    width: 166px;
+}
+.movieCategory h1 {
+    padding: 10px;
+}
+
+
+
+/*
+ * Aside - Classify
+ */
+.classify {
+    background-color: #D4D485;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.moviesClassify {
+    list-style-type: none;
+    margin-top: 30px;
+    text-align: center;
+}
+.moviesClassify > li {
+    background-color: #DDDDDD;
+    display: inline-block;
+    height: 236px;
+    margin-right: 235px;
+    width: 166px;
+}
+.moviesClassify > li:last-child {
+    margin-right: 0;
+}
+
+
+
+
+/**
+ *  Rodapé - Footer
+ */
+.mainPage > footer {
+    background-color: #D4C3D6;
+    color: #555555;
+    height: 80px;
+    margin: 0 2%;
+    width: 96%;
+}
+.mainPage > footer > h1 {
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

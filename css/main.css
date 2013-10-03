@@ -1,0 +1,408 @@
+/*
+ * Definições gerais
+ */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+	4
+}
+
+body {
+	background-color: #e1e1e1;
+	font-size: 0.95em;
+}
+
+.mainPage{
+	padding: 1.5%;
+}
+
+
+
+/*
+ * Highlights
+ */
+.highlights{
+    background-color: #000000;
+    background-image: url("../img/highlight/background.gradient.png");
+    background-position: center 100%;
+    background-repeat: repeat-x;
+    height: 570px;
+    text-align: center;
+    width: 100%;
+}
+.highlights h1{
+	display: none;
+}
+.movieHightligh {
+    height: 390px;
+    margin: 0 auto;
+    padding-top: 85px;
+    position: relative;
+    width: 1000px;
+}
+.movieHightligh:before{
+	background-image: url("http://cdn-0.nflximg.com/en_US/billboard/vignette_overlay_760x390.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 390px;
+    margin: 0 auto;
+    padding-top: 106px;
+    position: absolute;
+    top: 0;
+    width: 1000px;
+}
+.movieBanner {
+    float: right;
+}
+.movieDetails {
+    bottom: 0;
+    position: absolute;
+}
+.movieDetails > a > img{
+	width: 400px;
+}
+.movieDetails > a:hover > img {
+	box-shadow:  0px 0 0 2px #DDD;
+}
+.movieDetails > a:hover:before{
+	background-image: url("http://cdn-0.nflximg.com/en_us/buttons/player-add.png");
+	display:block;
+	content: " ";
+	width: 400px;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	background-position: center center;
+    background-repeat: no-repeat;
+}
+.movieDetails > a:hover:after{
+	background-color: #000000;
+    content: " ";
+    display: block;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 400px;
+}
+.movieDetails .playMovie{
+	float: left;
+}
+.movieDetails .bullet{
+	bottom: -43px;
+    left: -42px;
+    position: absolute;
+}
+.detailDescription {
+    bottom: 0;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 100px;
+    padding: 10px;
+    right: 0;
+    text-align: left;
+    width: 473px;
+}
+.detailDescription p{
+	text-align: justify;
+}
+.detailDescription p .moreInfo{
+	color: #e5000f;
+}
+
+
+
+
+
+/*
+ * Cabeçalho
+ */
+.mainPage > header {
+	background-color: #B9090B;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	height: 70px;
+	line-height: 4.5;
+	padding: 0 0 0 1.5%;
+	position: fixed;
+	width: 95.5%;
+	z-index:10;
+	top: 20px;
+}
+.mainPage > header > h1 {
+	display: inline-block;
+    line-height: 1;
+    margin-top: 8px;
+}
+.homeLink {
+	display: inline-block;
+    line-height: 100%;
+    margin-top: 14px;
+    vertical-align: middle;
+}
+
+.homeLink img {
+	border: none;
+}
+
+header nav {
+	display: inline-block;
+	line-height: 100%;
+	margin-top: 30px;
+}
+
+nav header {
+	display: none;
+}
+
+nav ul.mainMenu {
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+nav ul.mainMenu>li {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0 15px;
+}
+
+nav ul.mainMenu>li>a {
+	color: #ccc9c4;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+nav ul.mainMenu>li>a:hover,nav ul.mainMenu>li>a.active {
+	color: #ffffff;
+}
+
+nav ul.mainMenu ul.submenu {
+	display: none;
+}
+
+nav ul.mainMenu>li>a.hasSubmenu>span.right-arrow {
+	border-color: #ccc9c4 transparent transparent;
+	border-style: solid;
+	border-width: 4px;
+	margin-left: 5px;
+	margin-top: 5px;
+	position: absolute;
+}
+
+nav ul.mainMenu>li>a.hasSubmenu:hover>span.right-arrow {
+	border-color: #ffffff transparent transparent;
+}
+
+header form.searchForm {
+	float: right;
+}
+
+header form.searchForm .searchField {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0;
+	outline: medium none;
+	padding: 0;
+	vertical-align: middle;
+	width: 220px;
+}
+
+header .account-settings {
+	background-color: #D21702;
+    background-image: -moz-linear-gradient(center top , #D21702, #B9090B);
+    border-left: 1px solid #E40704;
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    margin-left: 10px;
+    width: 155px;
+}
+
+header .account-settings figure img{
+	float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 50px;
+}
+
+header .account-settings figure figcaption{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+/*
+ * Cada categoria
+ * 
+ */
+.mainContent .movieCategory {
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mainContent .movieCategory > header > h1{
+	font-size: 1.2em;
+	color: #2e2322;
+	margin-bottom: 20px;
+}
+.mainContent .movieList{
+	list-style-type:none;
+}
+.mainContent .movieList > li{
+	display: inline-block;
+    margin-right: 10px;
+}
+.mainContent .movieList > li:last-child{
+	margin-right: 0;
+}
+.mainContent .movieList article > h1, .mainContent .movieList article > section.movieDetails{
+	display: none;
+}
+.mainContent .movieList article figure{
+	position: relative;
+}
+.movieLink > img {
+    border: 1px solid #A4A4A4;
+}
+.mainContent .movieList .movieLink:hover:before{
+	background-image: url("http://cdn-0.nflximg.com/en_us/buttons/player-add.png");
+	display:block;
+	content: " ";
+	width: 166px;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	background-position: center center;
+    background-repeat: no-repeat;
+}
+.mainContent .movieList .movieLink:hover:after{
+	background-color: #000000;
+    content: " ";
+    display: block;
+    height: 237px;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 167px;
+}
+
+
+
+
+/*
+ * Aside - Classify
+ */
+.classify {
+    background-color: #464341;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.classify h1 {
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+.moviesClassify {
+    list-style-type: none;
+    margin-top: 30px;
+    text-align: center;
+}
+.moviesClassify > li {
+    display: inline-block;
+    margin-right: 235px;
+}
+.moviesClassify > li:last-child {
+    margin-right: 0;
+}
+.rating {
+    margin: 5px 0;
+    text-align: center;
+}
+.rating > li {
+    display: inline-block;
+}
+.rating a {
+    background-image: url("../img/classify/star_off.png");
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.rating a:hover {
+    background-image: url("../img/classify/star_on.png");
+}
+.classifyOptions > button {
+    background-color: #EEEEEE;
+    border: medium none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+
+
+
+/**
+ *  Rodapé - Footer
+ */
+.mainPage > footer {
+    border-top: 3px solid #B9090B;
+    color: #555555;
+    margin: 40px 20px;
+    padding: 20px 50px;
+}
+.mainPage > footer > h1 {
+    float: left;
+    font-size: 0.9em;
+    width: 250px;
+}
+.mapArea {
+    float: left;
+}
+.pageMap {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+}
+.pageMap > h2 {
+    float: left;
+    font-size: 0.9em;
+    margin-top: 1px;
+    width: 100px;
+}
+.pageMap > ul {
+    float: left;
+    list-style-type: none;
+}
+.pageMap > ul > li {
+    float: left;
+}
+.pageMap > ul > li > a {
+    border-right: 1px solid #AE1D00;
+    color: #AE1D00;
+    font-size: 0.9em;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    text-decoration: none;
+}
+.pageMap > ul > li > a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
